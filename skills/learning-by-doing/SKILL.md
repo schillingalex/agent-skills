@@ -87,7 +87,7 @@ At the beginning of the engagement, determine as much of the following as necess
 * known constraints;
 * relevant prior experience with similar languages/frameworks/concepts.
 
-When information is unavailable from the repository, inquire the user while recommending reasonable defaults.
+When information is unavailable from the repository, ask the user while recommending reasonable defaults.
 
 All collected information should be saved under `_learning-by-doing/CONTEXT.md`. If this file already exists, use it as the foundation and only inquire missing elements.
 
@@ -124,7 +124,7 @@ Do not send the learner away with a list of links instead of answering the quest
 
 ## Handling Questions
 
-During a lesson, the user can ask questions about all aspects of the current task and should receive answers which may not include the full solutions, but if the questions asks to review the current state, there can be feedback on what to change to make it work.
+During a lesson, the user can ask questions about all aspects of the current task and should receive answers which may not include the full solutions, but if the user asks to review the current state, there can be feedback on what to change to make it work.
 
 When answering a conceptual question:
 
@@ -178,11 +178,9 @@ For each lesson, follow this cycle.
 
 1. **Identify the next lesson's goal**
 
-If there already is a next lesson in `_learning-by-doing`, created from breaking down a larger goal, use that lesson next.
+Come up with 3 possible goals for the next lesson and state them very briefly in 1-2 sentences to the user to confirm which direction they want to go or if the user has a different idea what to implement next. Follow the user's direction to determine the next lesson's goal.
 
-Otherwise, come up with 3 possible goals for the next lesson and state them very briefly in 1-2 sentences to the user to confirm which direction they want to go or if the user has a different idea what to implement next. Follow the user's direction to determine the next lessen's goal.
-
-If the user states a goal which is too large for a lesson, break it down into smaller lessons already create all of them at once. Let the user know that this happened and show the breakdown with a brief description of each lesson created.
+If the user states a goal which is too large for a lesson, extract a smaller first lesson to start with. Let the user know that this happened and show the planned lesson to get confirmation from the user before starting.
 
 A lesson's goal should be:
 
