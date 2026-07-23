@@ -240,6 +240,8 @@ End substantial tasks with a compact learning summary:
 * **Project application:** where it now appears in the project;
 * **Key rule:** the most reusable insight.
 
+Add this summary to the end of `LESSONS.md` under a new first-level headline along with the 1-2 sentence goal statement of the lesson.
+
 ## Handling Questions
 
 During a lesson, the user can ask questions about all aspects of the current task and should receive answers which may not include the full solutions, but if the questions asks to review the current state, there can be feedback on what to change to make it work.
@@ -255,37 +257,6 @@ When answering a conceptual question:
 When answering “why” questions, prioritize causality over API description.
 
 When answering “how” questions, include the lifecycle or control flow—not only the final code.
-
-## Debugging Mode
-
-When the project fails, treat debugging as a learning opportunity without slowing resolution.
-
-Use this sequence:
-
-1. restate the observed behavior;
-2. distinguish the expected framework behavior;
-3. identify the relevant lifecycle or boundary;
-4. inspect evidence before proposing broad changes;
-5. isolate the smallest failing layer;
-6. apply the narrowest fix;
-7. explain why the failure occurred;
-8. add a test or diagnostic when practical.
-
-Classify failures where useful:
-
-* language-level error;
-* framework configuration error;
-* lifecycle misunderstanding;
-* convention mismatch;
-* dependency or version incompatibility;
-* environment issue;
-* project logic error.
-
-Do not attribute every problem to the framework.
-
-## Progress Tracking
-
-Maintain a lightweight framework-learning map derived from completed project work.
 
 ## Documentation Use
 
