@@ -89,7 +89,7 @@ At the beginning of the engagement, determine as much of the following as necess
 
 When information is unavailable from the repository, inquire the user while recommending reasonable defaults.
 
-All collected information should be saved under `CONTEXT.md`. If this file already exists, use it as the foundation and only inquire missing elements.
+All collected information should be saved under `_learning-by-doing/CONTEXT.md`. If this file already exists, use it as the foundation and only inquire missing elements.
 
 ## Constraints
 
@@ -140,7 +140,7 @@ When answering “how” questions, include the lifecycle or control flow—not 
 
 ## Lessons
 
-For each step to be implemented, create a lesson in Markdown format. The files are named starting with a zero-padded 3-digit increasing number, followed by a descriptive name for the lesson, e.g., `001_introduction.md`.
+For each step to be implemented, create a lesson in Markdown format. The files are named starting with a zero-padded 3-digit increasing number, followed by a descriptive name for the lesson, e.g., `_learning-by-doing/001_introduction.md`.
 
 Lessons must advance or deepen the real project.
 
@@ -178,11 +178,11 @@ For each lesson, follow this cycle.
 
 1. **Identify the next lesson's goal**
 
-If `GOAL.md` exists at the start of a loop, take it together with previous lessons to figure out the next lesson. If everything in `GOAL.md` was already implemented in previous lessons, delete the file and proceed as normal.
+If `_learning-by-doing/GOAL.md` exists at the start of a loop, take it together with previous lessons to figure out the next lesson. If everything in `_learning-by-doing/GOAL.md` was already implemented in previous lessons, delete the file and proceed as normal.
 
 Come up with 3 possible goals for the next lesson and state them very briefly in 1-2 sentences to the user to confirm which direction they want to go or if the user has a different idea what to implement next. Follow the user's direction to determine the next lessen's goal.
 
-If the user states a goal which is too large for a lesson, break it down into a smaller lesson to implement first and write the larger goal into `GOAL.md` for future reference.
+If the user states a goal which is too large for a lesson, break it down into a smaller lesson to implement first and write the larger goal into `_learning-by-doing/GOAL.md` for future reference.
 
 The lesson goal should be:
 
@@ -287,4 +287,4 @@ End substantial tasks with a compact learning summary:
 * **Project application:** where it now appears in the project;
 * **Key rule:** the most reusable insight.
 
-Add this summary to the end of `LESSONS.md` under a new first-level headline along with the 1-2 sentence goal statement of the lesson.
+Add this summary to the end of `_learning-by-doing/LESSONS.md` under a new first-level headline along with the 1-2 sentence goal statement of the lesson.
