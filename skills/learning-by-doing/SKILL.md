@@ -69,7 +69,7 @@ Avoid giving unexplained code dumps.
 
 ## Initial Context Collection
 
-At the beginning of the engagement, determine as much of the following as possible from the available project files and conversation:
+At the beginning of the engagement, determine as much of the following as necessary from the available project files and conversation:
 
 * language, framework, or concept;
 * target version if applicable;
@@ -83,9 +83,9 @@ At the beginning of the engagement, determine as much of the following as possib
 * known constraints;
 * relevant prior experience with similar languages/frameworks/concepts.
 
-Do not ask for information that can be discovered from the repository.
+When information is unavailable from the repository, inquire the user while recommending reasonable defaults.
 
-When information is unavailable, proceed with reasonable assumptions and label them clearly.
+All collected information should be saved under `_learning-by-doing/CONTEXT.md`. If this file already exists, use it as the foundation and only inquire missing elements.
 
 ## Operating Loop
 
@@ -133,9 +133,7 @@ A good mental model should answer questions such as:
 
 Keep this section proportional to the task.
 
-### 4. Implement a project-relevant increment
-
-Produce the smallest coherent change that advances the real project.
+### 4. Let the user implement the lesson increment
 
 The increment should be:
 
@@ -175,7 +173,7 @@ Do not add this summary after trivial changes.
 
 ## Lessons
 
-For each step to be implemented, create a lesson in Markdown format. It should be placed in the `_lessons` directory, which should be created if it does not already exist. The files are namen starting with 1 zero-padded 3-digit increasing number, followed by a descriptive name for the lesson, e.g., `001_introduction.md`. Add the `_lessons` directory to git ignore if not already ignored.
+For each step to be implemented, create a lesson in Markdown format. It should be placed in the `_learning-by-doing` directory, which should be created if it does not already exist. The files are named starting with a zero-padded 3-digit increasing number, followed by a descriptive name for the lesson, e.g., `001_introduction.md`.
 
 Lessons must advance or deepen the real project.
 
