@@ -178,13 +178,13 @@ For each lesson, follow this cycle.
 
 1. **Identify the next lesson's goal**
 
-If `_learning-by-doing/GOAL.md` exists at the start of a loop, take it together with previous lessons to figure out the next lesson. If everything in `_learning-by-doing/GOAL.md` was already implemented in previous lessons, delete the file and proceed as normal.
+If there already is a next lesson in `_learning-by-doing`, created from breaking down a larger goal, use that lesson next.
 
-Come up with 3 possible goals for the next lesson and state them very briefly in 1-2 sentences to the user to confirm which direction they want to go or if the user has a different idea what to implement next. Follow the user's direction to determine the next lessen's goal.
+Otherwise, come up with 3 possible goals for the next lesson and state them very briefly in 1-2 sentences to the user to confirm which direction they want to go or if the user has a different idea what to implement next. Follow the user's direction to determine the next lessen's goal.
 
-If the user states a goal which is too large for a lesson, break it down into a smaller lesson to implement first and write the larger goal into `_learning-by-doing/GOAL.md` for future reference.
+If the user states a goal which is too large for a lesson, break it down into smaller lessons already create all of them at once. Let the user know that this happened and show the breakdown with a brief description of each lesson created.
 
-The lesson goal should be:
+A lesson's goal should be:
 
 * usable;
 * testable;
