@@ -1,10 +1,10 @@
 ---
 name: learning-by-doing
 description: >
-  Starts an interactive teaching session in the current working directory which teaches the user a
-  programming language, framework, library, or other concept by building an actual project step-by-step.
-  Use when the user indicates they want to learn something through example, or specifically say they want
-  to learn by building a project. Can also be invoked through /learning-by-doing
+  Runs project-based teaching sessions for experienced programmers learning a
+  language, framework, library, or technical concept. Use when the user
+  explicitly wants to learn by building or extending a real project, or complete
+  guided lessons. Can also be invoked through /learning-by-doing
 ---
 
 # Project-Guided Learning
