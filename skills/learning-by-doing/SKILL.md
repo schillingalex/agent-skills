@@ -17,7 +17,7 @@ The primary objective is to move the project forward. Learning should happen thr
 
 ## Environment
 
-All files you create or edit for the purposes of the coursework, such as lessons, context, goals, and supplemental information need to be placed in the `_learning-by-doing` directory. Create it if it does not exist yet.
+Place all learning artifacts created by this skill, including lessons, context, and summaries, in `_learning-by-doing`. Create `_learning-by-doing` if it does not exist. Project implementation remains in the project's normal source directories.
 
 ## Core Principles
 
@@ -118,13 +118,15 @@ Prefer authoritative sources in this order:
 5. primary documentation for closely related tools;
 6. reputable secondary sources when official material is insufficient.
 
+Prefer documentation matching the version recorded in `_learning-by-doing/CONTEXT.md`.
+
 Use documentation to resolve uncertainty, not to replace project-specific reasoning.
 
 Do not send the learner away with a list of links instead of answering the question.
 
 ## Handling Questions
 
-During a lesson, the user can ask questions about all aspects of the current task and should receive answers which may not include the full solutions, but if the user asks to review the current state, there can be feedback on what to change to make it work.
+During a lesson, the user can ask questions about all aspects of the current task. When answering, start with conceptual guidance. If the learner remains blocked, provide progressively more specific hints and partial snippets. Provide a complete solution only when the learner explicitly requests one.
 
 When answering a conceptual question:
 
@@ -164,7 +166,7 @@ A lesson should include:
 * one or two constraints;
 * a way to verify completion.
 
-The lesson description should have detailed instructions on what the goal of this lesson is. There should be explanations on how to accomplish the task. Skip basic knowledge that an experienced programmer should already have. Add references to documentation and further reading related to the concept so the user can look up how things work and research deeper information if they choose to.
+The lesson description should have detailed instructions on what the goal of this lesson is. Explain the concepts, constraints, and relevant APIs without providing the complete implementation. Put optional hints in increasing order of specificity. Skip basic knowledge that an experienced programmer should already have. Add references to documentation and further reading related to the concept so the user can look up how things work and research deeper information if they choose to.
 
 The lesson document has 3 general sections:
 
@@ -184,11 +186,11 @@ If `_learning-by-doing/LESSONS.md` records that lesson's exact filename as compl
 
 * continue it, then resume at step 4;
 * check their work, then resume at step 5;
-* abandon it, record it as abandoned in `_learning-by-doing/LESSONS.md`, then continue below.
+* abandon it, record it as abandoned according to step 6, then continue below.
 
 Do not propose or create a new lesson when continuing or checking an existing one.
 
-Come up with 3 possible goals for the next lesson and state them very briefly in 1-2 sentences to the user to confirm which direction they want to go or if the user has a different idea what to implement next. Follow the user's direction to determine the next lesson's goal.
+If the learner already specified a concrete next goal, confirm and use it. Otherwise, propose three possible goals for the next lesson and state them very briefly in 1-2 sentences to the user to confirm which direction they want to go or if the user has a different idea what to implement next. Follow the user's direction to determine the next lesson's goal.
 
 If the user states a goal which is too large for a lesson, extract a smaller first lesson to start with. Let the user know that this happened and show the planned lesson to get confirmation from the user before starting.
 
@@ -223,7 +225,7 @@ Keep this section proportional to the task.
 
 4. **Let the user implement the lesson increment**
 
-During this step, answer any questions the user may have. Do not implement anything for the user. You can provide code snippets if necessary to answer a question.
+During this step, answer any questions the user may have following the general guidelines above. Do not edit the project implementation. If the learner explicitly requests a complete solution, provide it as guidance for them to apply.
 
 5. **Verify the change**
 
@@ -261,7 +263,7 @@ For every significant issue:
 * show a concrete revision;
 * state the practical consequence.
 
-If there are shortcomings in the solution in terms of correctness, have the user correct it. Only when the implementation is correct, you can move on to the next step.
+Do not silently advance past correctness issues. Let the learner correct them, request additional help, revise the lesson, or explicitly abandon it. Record abandoned lessons according to step 6.
 
 If the implementation is correct but there are other suggestions, let the user decide if they want to keep working or move on to the next step.
 
@@ -289,10 +291,21 @@ Keep subjective style suggestions separate from material issues.
 
 6. **Consolidate the lesson**
 
-After every completed lesson, add a compact learning summary:
+Whenever a lesson is completed or abandoned, append exactly one record to `_learning-by-doing/LESSONS.md`.
+
+Use one of these heading formats:
+
+```markdown
+# 001_introduction.md [completed]
+# 002_validation.md [abandoned]
+```
+
+Include the lesson's 1-2 sentence goal below the heading.
+
+For a completed lesson, also include:
 
 * **Framework concept:** the main concept used;
 * **Project application:** where it now appears in the project;
 * **Key rule:** the most reusable insight.
 
-Add this summary to the end of `_learning-by-doing/LESSONS.md` under a new first-level headline containing the filename of the lesson along with the 1-2 sentence goal statement of the lesson.
+For an abandoned lesson, briefly record why it was abandoned and any unresolved project changes.
