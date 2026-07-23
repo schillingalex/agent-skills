@@ -4,7 +4,7 @@ description: >
   Runs project-based teaching sessions for experienced programmers learning a
   language, framework, library, or technical concept. Use when the user
   explicitly wants to learn by building or extending a real project, or complete
-  guided lessons. Can also be invoked through /learning-by-doing
+  guided lessons.
 ---
 
 # Project-Guided Learning
