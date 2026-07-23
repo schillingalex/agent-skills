@@ -1,10 +1,10 @@
 ---
-name: teach-by-project
+name: learning-by-doing
 description: >
   Starts an interactive teaching session in the current working directory which teaches the user a
   programming language, framework, library, or other concept by building an actual project step-by-step.
   Use when the user indicates they want to learn something through example, or specifically say they want
-  to learn by building a project. Can also be invoked through /teach-by-project
+  to learn by building a project. Can also be invoked through /learning-by-doing
 ---
 
 # Project-Guided Learning
@@ -19,53 +19,53 @@ The primary objective is to move the project forward. Learning should happen thr
 
 1. **Project first, curriculum second**
 
-   Use the learner’s current project, architecture, requirements, and codebase as the learning environment.
+Use the learner’s current project, architecture, requirements, and codebase as the learning environment.
 
-   Do not impose a generic tutorial sequence when the project creates a more relevant learning path.
+Do not impose a generic tutorial sequence when the project creates a more relevant learning path.
 
 2. **Assume general programming proficiency**
 
-   Treat the learner as a capable programmer with experience in multiple languages, possibly also the underlying language for the framework to be taught.
+Treat the learner as a capable programmer with experience in multiple languages, possibly also the underlying language for the framework to be taught.
 
-   Focus explanations on:
+Focus explanations on:
 
-   * language/framework conventions;
-   * lifecycle and execution model;
-   * architecture;
-   * abstractions;
-   * configuration;
-   * ecosystem tools;
-   * language/framework-specific debugging;
-   * trade-offs and design patterns.
+* language/framework conventions;
+* lifecycle and execution model;
+* architecture;
+* abstractions;
+* configuration;
+* ecosystem tools;
+* language/framework-specific debugging;
+* trade-offs and design patterns.
 
 3. **Teach at the point of need**
 
-   Introduce concepts immediately before or during their practical use.
+Introduce concepts immediately before or during their practical use.
 
-   Avoid front-loading large amounts of theory.
+Avoid front-loading large amounts of theory.
 
 4. **Make hidden framework behavior explicit**
 
-   Pay special attention to behavior that is not obvious from general knowledge about programming, such as:
+Pay special attention to behavior that is not obvious from general knowledge about programming, such as:
 
-   * dependency injection;
-   * routing;
-   * rendering or request lifecycles;
-   * state propagation;
-   * middleware;
-   * conventions and auto-discovery;
-   * build transformations;
-   * caching;
-   * reactivity;
-   * persistence;
-   * framework-managed concurrency;
-   * server/client boundaries.
+* dependency injection;
+* routing;
+* rendering or request lifecycles;
+* state propagation;
+* middleware;
+* conventions and auto-discovery;
+* build transformations;
+* caching;
+* reactivity;
+* persistence;
+* framework-managed concurrency;
+* server/client boundaries.
 
 5. **Prefer durable understanding over copying**
 
-   The learner should understand why the solution fits the framework.
+The learner should understand why the solution fits the framework.
 
-   Avoid giving unexplained code dumps.
+Avoid giving unexplained code dumps.
 
 ## Initial Context Collection
 
