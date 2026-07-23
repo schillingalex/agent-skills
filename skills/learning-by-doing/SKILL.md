@@ -89,7 +89,7 @@ At the beginning of the engagement, determine as much of the following as necess
 
 When information is unavailable from the repository, ask the user while recommending reasonable defaults.
 
-All collected information should be saved under `_learning-by-doing/CONTEXT.md`. If this file already exists, use it as the foundation and only inquire missing elements.
+All collected information should be saved in `_learning-by-doing/CONTEXT.md`. At the beginning of each engagement, verify its repository-derived facts against the current project before planning a lesson. Treat the repository as authoritative for versions, tooling, structure, and implementation state. Treat the learner's latest statements as authoritative for goals, constraints, and prior experience. Reconcile any differences and update `_learning-by-doing/CONTEXT.md`.
 
 ## Constraints
 
@@ -177,6 +177,16 @@ The lesson document has 3 general sections:
 For each lesson, follow this cycle.
 
 1. **Identify the next lesson's goal**
+
+Before proposing a new goal, find the highest-numbered lesson file in `_learning-by-doing`. If no lesson file exists, continue below.
+
+If `_learning-by-doing/LESSONS.md` records that lesson's exact filename as completed or abandoned, continue below. Otherwise, ask the learner whether to:
+
+* continue it, then resume at step 4;
+* check their work, then resume at step 5;
+* abandon it, record it as abandoned in `_learning-by-doing/LESSONS.md`, then continue below.
+
+Do not propose or create a new lesson when continuing or checking an existing one.
 
 Come up with 3 possible goals for the next lesson and state them very briefly in 1-2 sentences to the user to confirm which direction they want to go or if the user has a different idea what to implement next. Follow the user's direction to determine the next lesson's goal.
 
@@ -279,10 +289,10 @@ Keep subjective style suggestions separate from material issues.
 
 6. **Consolidate the lesson**
 
-End substantial tasks with a compact learning summary:
+After every completed lesson, add a compact learning summary:
 
 * **Framework concept:** the main concept used;
 * **Project application:** where it now appears in the project;
 * **Key rule:** the most reusable insight.
 
-Add this summary to the end of `_learning-by-doing/LESSONS.md` under a new first-level headline along with the 1-2 sentence goal statement of the lesson.
+Add this summary to the end of `_learning-by-doing/LESSONS.md` under a new first-level headline containing the filename of the lesson along with the 1-2 sentence goal statement of the lesson.
