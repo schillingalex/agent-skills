@@ -20,3 +20,16 @@ The agent checks lesson completion and gives feedback.
 ```bash
 npx skills add https://github.com/schillingalex/agent-skills --skill learning-by-doing
 ```
+
+# Bounce Ideas
+
+The agent will inquire a central goal for a brainstorming session. After the initial
+goal definition, the user can state ideas, to which the agent answers with a
+follow-up question to gather more and more information towards the stated goal.
+The session is consolidated with a short prose text summarizing all of the ideas.
+
+**Installation (this skill)**
+
+```bash
+npx skills add https://github.com/schillingalex/agent-skills --skill bounce-ideas
+```
